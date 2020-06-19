@@ -1,0 +1,120 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Softplan.CalculaJuros.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Softplan.CalculaJuros.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Softplan.CalculaJuros.Domain.dll": {}
+        }
+      },
+      "Softplan.CalculaJuros.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Softplan.CalculaJuros.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Softplan.CalculaJuros.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Softplan.CalculaJuros.Infra.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Softplan.CalculaJuros.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Softplan.CalculaJuros.Domain/Softplan.CalculaJuros.Domain.csproj",
+      "msbuildProject": "../Softplan.CalculaJuros.Domain/Softplan.CalculaJuros.Domain.csproj"
+    },
+    "Softplan.CalculaJuros.Infra/1.0.0": {
+      "type": "project",
+      "path": "../Softplan.CalculaJuros.Infra/Softplan.CalculaJuros.Infra.csproj",
+      "msbuildProject": "../Softplan.CalculaJuros.Infra/Softplan.CalculaJuros.Infra.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Softplan.CalculaJuros.Domain >= 1.0.0",
+      "Softplan.CalculaJuros.Infra >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Anderson Isidoro\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Projetos\\GitHub\\Softplan\\calcula-juros\\Softplan.CalculaJuros.Api\\Softplan.CalculaJuros.Api.csproj",
+      "projectName": "Softplan.CalculaJuros.Api",
+      "projectPath": "C:\\Projetos\\GitHub\\Softplan\\calcula-juros\\Softplan.CalculaJuros.Api\\Softplan.CalculaJuros.Api.csproj",
+      "packagesPath": "C:\\Users\\Anderson Isidoro\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\GitHub\\Softplan\\calcula-juros\\Softplan.CalculaJuros.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Anderson Isidoro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Projetos\\GitHub\\Softplan\\calcula-juros\\Softplan.CalculaJuros.Domain\\Softplan.CalculaJuros.Domain.csproj": {
+              "projectPath": "C:\\Projetos\\GitHub\\Softplan\\calcula-juros\\Softplan.CalculaJuros.Domain\\Softplan.CalculaJuros.Domain.csproj"
+            },
+            "C:\\Projetos\\GitHub\\Softplan\\calcula-juros\\Softplan.CalculaJuros.Infra\\Softplan.CalculaJuros.Infra.csproj": {
+              "projectPath": "C:\\Projetos\\GitHub\\Softplan\\calcula-juros\\Softplan.CalculaJuros.Infra\\Softplan.CalculaJuros.Infra.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
