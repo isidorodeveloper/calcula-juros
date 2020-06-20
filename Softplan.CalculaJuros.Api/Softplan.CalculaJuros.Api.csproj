@@ -5,8 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Softplan.CalculaJuros.Domain\Softplan.CalculaJuros.Domain.csproj" />
-    <ProjectReference Include="..\Softplan.CalculaJuros.Infra\Softplan.CalculaJuros.Infra.csproj" />
+    <ProjectReference Include="..\Softplan.CalculaJuros.AppServices\Softplan.CalculaJuros.AppServices.csproj" />
+    <ProjectReference Include="..\Softplan.CalculaJuros.CrossCutting\Softplan.CalculaJuros.CrossCutting.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.0" />
   </ItemGroup>
 
 
