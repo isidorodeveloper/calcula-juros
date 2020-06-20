@@ -4,6 +4,6 @@ namespace Softplan.CalculaJuros.Services.TaxaJuros
 {
     internal class TaxaJurosService : ITaxaJurosService
     {
-        public decimal ObterTaxaJuros(int taxa) => (decimal)taxa / 100;
+        public decimal ObterTaxaJuros(int? taxa = 1) => (decimal)taxa / 100;
     }
 }

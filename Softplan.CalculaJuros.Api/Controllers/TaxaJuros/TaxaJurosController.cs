@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Softplan.CalculaJuros.AppServices.Interfaces.TaxaJuros;
 
-namespace Softplan.CalculaJuros.Api.Controllers
+namespace Softplan.CalculaJuros.Api.Controllers.TaxaJuros
 {
     [ApiController]
     [Route("v1/taxaJuros")]

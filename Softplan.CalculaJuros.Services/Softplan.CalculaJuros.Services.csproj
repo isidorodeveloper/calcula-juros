@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Softplan.CalculaJuros.Domain\Softplan.CalculaJuros.Domain.csproj" />
+    <ProjectReference Include="..\Softplan.CalculaJuros.Utils\Softplan.CalculaJuros.Utils.csproj" />
+  </ItemGroup>
+
 </Project>

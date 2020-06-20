@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Softplan.CalculaJuros.Domain\Softplan.CalculaJuros.Domain.csproj" />
     <ProjectReference Include="..\Softplan.CalculaJuros.Services\Softplan.CalculaJuros.Services.csproj" />
   </ItemGroup>
