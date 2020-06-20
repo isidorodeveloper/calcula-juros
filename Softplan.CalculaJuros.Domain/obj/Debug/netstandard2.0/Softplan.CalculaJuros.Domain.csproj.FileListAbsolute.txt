@@ -1,7 +1,0 @@
-C:\Projetos\GitHub\Softplan\calcula-juros\Softplan.CalculaJuros.Domain\bin\Debug\netstandard2.0\Softplan.CalculaJuros.Domain.deps.json
-C:\Projetos\GitHub\Softplan\calcula-juros\Softplan.CalculaJuros.Domain\bin\Debug\netstandard2.0\Softplan.CalculaJuros.Domain.dll
-C:\Projetos\GitHub\Softplan\calcula-juros\Softplan.CalculaJuros.Domain\bin\Debug\netstandard2.0\Softplan.CalculaJuros.Domain.pdb
-C:\Projetos\GitHub\Softplan\calcula-juros\Softplan.CalculaJuros.Domain\obj\Debug\netstandard2.0\Softplan.CalculaJuros.Domain.AssemblyInfoInputs.cache
-C:\Projetos\GitHub\Softplan\calcula-juros\Softplan.CalculaJuros.Domain\obj\Debug\netstandard2.0\Softplan.CalculaJuros.Domain.AssemblyInfo.cs
-C:\Projetos\GitHub\Softplan\calcula-juros\Softplan.CalculaJuros.Domain\obj\Debug\netstandard2.0\Softplan.CalculaJuros.Domain.dll
-C:\Projetos\GitHub\Softplan\calcula-juros\Softplan.CalculaJuros.Domain\obj\Debug\netstandard2.0\Softplan.CalculaJuros.Domain.pdb
