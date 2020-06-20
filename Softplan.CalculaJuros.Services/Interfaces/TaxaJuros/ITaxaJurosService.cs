@@ -2,6 +2,6 @@
 {
     public interface ITaxaJurosService
     {
-        decimal ObterTaxaJuros(int taxa);
+        decimal ObterTaxaJuros(int? taxa = 1);
     }
 }

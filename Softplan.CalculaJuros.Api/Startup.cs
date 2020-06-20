@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Softplan.CalculaJuros.Api.IoC;
+using Softplan.CalculaJuros.Api.Mappings;
 using System;
 
 namespace Softplan.CalculaJuros.Api
@@ -27,6 +28,11 @@ namespace Softplan.CalculaJuros.Api
             IoCConfiguration.Register(services);
             #endregion
 
+            #region AutoMapper
+            services.AddSingleton(AutoMapperConfiguration.Register());
+            #endregion
+
+            #region Swagger
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1",
@@ -42,6 +48,7 @@ namespace Softplan.CalculaJuros.Api
                         }
                     });
             });
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,15 +57,15 @@ namespace Softplan.CalculaJuros.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
 
-            #region Middleware Swagger
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cálculo de Juros Compostos V1");
-            });
-            #endregion
+                #region Middleware Swagger
+                app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cálculo de Juros Compostos V1");
+                });
+                #endregion
+            }
 
             app.UseHttpsRedirection();
 
