@@ -38,13 +38,14 @@ namespace Softplan.CalculaJuros.Api
                 c.SwaggerDoc("v1",
                     new OpenApiInfo
                     {
-                        Title = "Cálulo de Juros Compostos",
+                        Title = "Cálculo de Juros Compostos",
                         Version = "v1",
                         Description = "API REST criada com o ASP.NET Core 3.1 para Cálculo de Juros Compostos",
                         Contact = new OpenApiContact
                         {
                             Name = "Anderson Isidoro",
-                            Url = new Uri("https://github.com/isidorodeveloper")
+                            Email = "anderson.isidoro.programador@gmail.com",
+                            Url = new Uri("https://github.com/isidorodeveloper/calcula-juros/tree/master")
                         }
                     });
             });
