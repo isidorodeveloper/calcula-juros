@@ -264,9 +264,9 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-            "Flunt": {
+            "FluentValidator": {
               "target": "Package",
-              "version": "[1.0.5, )"
+              "version": "[2.0.4, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

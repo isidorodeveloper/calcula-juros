@@ -2,6 +2,7 @@
 using Softplan.CalculaJuros.AppServices.Dtos.Juros;
 using Softplan.CalculaJuros.AppServices.Interfaces.Juros;
 using Softplan.CalculaJuros.Domain.Entities.Juros;
+using Softplan.CalculaJuros.Domain.Results;
 using Softplan.CalculaJuros.Services.Interfaces.Juros;
 
 namespace Softplan.CalculaJuros.AppServices.Juros
@@ -16,7 +17,7 @@ namespace Softplan.CalculaJuros.AppServices.Juros
             _mapper = mapper;
         }
 
-        public decimal CalcularJurosComposto(JurosCompostoDto input)
+        public Retorno CalcularJurosComposto(JurosCompostoDto input)
         {
             return _service.CalcularJurosComposto(_mapper.Map<JurosComposto>(input));
         }
