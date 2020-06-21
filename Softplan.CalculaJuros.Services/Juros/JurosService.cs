@@ -1,4 +1,5 @@
 ﻿using Softplan.CalculaJuros.Domain.Entities.Juros;
+using Softplan.CalculaJuros.Domain.Results;
 using Softplan.CalculaJuros.Services.Interfaces.Juros;
 using Softplan.CalculaJuros.Services.Interfaces.TaxaJuros;
 using Softplan.CalculaJuros.Utils.Helpers;
@@ -14,12 +15,17 @@ namespace Softplan.CalculaJuros.Services.Juros
             _service = service;
         }
 
-        public decimal CalcularJurosComposto(JurosComposto input)
+        public Retorno CalcularJurosComposto(JurosComposto input)
         {
-            var taxaJuros = _service.ObterTaxaJuros(2);
-            decimal valorFinal = input.ValorInicial * (decimal)Math.Pow((double)(1 + taxaJuros), input.Tempo);
+            if (input.Invalid)
+                return new Retorno(false, "Informações inválidas!", input.Notifications);
+            else
+            {
+                var taxaJuros = _service.ObterTaxaJuros();
+                decimal valorFinal = input.ValorInicial * (decimal)Math.Pow((double)(1 + taxaJuros), input.Tempo);
 
-            return valorFinal.TruncateDecimal(2);
+                return new Retorno(true, "Cálculo Realizado!", valorFinal.TruncateDecimal(2));
+            }
         }
     }
 }

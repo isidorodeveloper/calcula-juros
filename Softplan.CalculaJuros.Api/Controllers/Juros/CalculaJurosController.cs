@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Softplan.CalculaJuros.AppServices.Dtos.Juros;
 using Softplan.CalculaJuros.AppServices.Interfaces.Juros;
+using System;
 
 namespace Softplan.CalculaJuros.Api.Controllers.Juros
 {
@@ -17,11 +18,19 @@ namespace Softplan.CalculaJuros.Api.Controllers.Juros
 
         [Route("")]
         [HttpGet]
-        public decimal CalcularJurosComposto(
+        public IActionResult CalcularJurosComposto(
             [FromQuery] JurosCompostoDto input
         )
         {
-            return _appService.CalcularJurosComposto(input);
+            try
+            {
+                var result = _appService.CalcularJurosComposto(input);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { erro = ex.Message });
+            }
         }
 
         [Route("showmethecode")]

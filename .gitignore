@@ -4,5 +4,5 @@
 
 *.lock
 */obj
-/bin
-/.vs
+*/bin
+.vs/
