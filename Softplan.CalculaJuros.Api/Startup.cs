@@ -68,7 +68,7 @@ namespace Softplan.CalculaJuros.Api
                 #endregion
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

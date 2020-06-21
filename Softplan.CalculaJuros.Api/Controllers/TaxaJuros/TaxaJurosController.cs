@@ -8,15 +8,19 @@ namespace Softplan.CalculaJuros.Api.Controllers.TaxaJuros
     [Route("v1/taxaJuros")]
     public class TaxaJurosController : ControllerBase
     {
+        private readonly ITaxaJurosAppService _appService;
+        public TaxaJurosController(ITaxaJurosAppService appService)
+        {
+            _appService = appService;
+        }
+
         [Route("")]
         [HttpGet]
-        public IActionResult ObterTaxaJuros(
-            [FromServices]ITaxaJurosAppService appService
-        )
+        public IActionResult ObterTaxaJuros()
         {
             try
             {
-                var result = appService.ObterTaxaJuros(1);
+                var result = _appService.ObterTaxaJuros(1);
                 return Ok(result);
             }
             catch (Exception ex)
