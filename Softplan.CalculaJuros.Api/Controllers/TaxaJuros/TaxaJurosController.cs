@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Softplan.CalculaJuros.AppServices.Interfaces.TaxaJuros;
+using System;
 
 namespace Softplan.CalculaJuros.Api.Controllers.TaxaJuros
 {
@@ -9,11 +10,19 @@ namespace Softplan.CalculaJuros.Api.Controllers.TaxaJuros
     {
         [Route("")]
         [HttpGet]
-        public decimal ObterTaxaJuros(
+        public IActionResult ObterTaxaJuros(
             [FromServices]ITaxaJurosAppService appService
         )
         {
-            return appService.ObterTaxaJuros(1);
+            try
+            {
+                var result = appService.ObterTaxaJuros(1);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { erro = ex.Message });
+            }
         }
     }
 }
