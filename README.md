@@ -14,3 +14,5 @@ Implementação de API para cálculo de juros compostos
 # Docker
 Imagem disponível para download no DockerHub. Utilizar o comando abaixo para obter a imagem em seu repositório local:
 
+  - Pull da Imagem: docker pull aisidoro/softplandevops:calcula-juros-api-1.0
+  - Executar imagem no container: docker run -d -p 20001:80 --name calcula-juros-api aisidoro/softplandevops:calcula-juros-api-1.0
