@@ -58,17 +58,15 @@ namespace Softplan.CalculaJuros.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-
-                #region Middleware Swagger
-                app.UseSwagger();
-                app.UseSwaggerUI(c =>
-                {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cálculo de Juros Compostos V1");
-                });
-                #endregion
             }
 
-            //app.UseHttpsRedirection();
+            #region Middleware Swagger
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cálculo de Juros Compostos V1");
+            });
+            #endregion
 
             app.UseRouting();
 
